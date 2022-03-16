@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇</title>
+    <style>
+        body{
+            background: #333;
+            color: #fff;
+        }
+        table {
+            border-collapse: collapse;
+            background: #333;
+            border: 1px solid #fff;
+            
+        }
+
+        td {
+            width: 20px;
+            height: 20px;
+            color: red;
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>贪吃蛇小游戏</h1>
+    <h3 id="f">帧标号:0</h3>
+    <h3 id="score">分数:0</h3>
+    <div id="app"></div>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Snake.js"></script>
+    <script src="./js/Food.js"></script>
+    <script>
+        var game = new Game();
+    </script>
+</body>
+
+</html>
